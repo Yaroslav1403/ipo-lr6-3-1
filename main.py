@@ -16,14 +16,14 @@ letters_в = 0
 numbers_of_samples = random.randint(1, len(string))
 
 #Случайным образом выбираем строки из списка
-selected_lines = random.sample(string, numbers_of_samples)
+selected_strings = random.sample(string, numbers_of_samples)
 
 #Используем цикл для подсчета
-for line in selected_lines:
+for line in selected_strings:
     #Приводим строку к нижнему регистру для учета регистра
     if 'в' in line.lower():
         letters_в += 1
 
 #Вывод результата
-print(f"Выбранные строки: {selected_lines}")
+print(f"Выбранные строки: {selected_strings}")
 print(f"Количество строк, содержащих букву 'в', равно {letters_в}")
